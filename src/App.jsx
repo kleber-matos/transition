@@ -14,6 +14,7 @@ const Carregando = styled.div`
     ativo &&
     `
     width: 100%;
+    background-color: red;
   `}
 `;
 
