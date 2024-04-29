@@ -24,6 +24,7 @@ export default function App() {
 
   return (
     <>
+      <h1>trasition</h1>
       <Carregando ativo={ativo} onClick={() => setAtivo(!ativo)}>
         Carregando...
       </Carregando>
