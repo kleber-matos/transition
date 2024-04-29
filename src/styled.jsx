@@ -1,17 +1,20 @@
 /** @format */
 
-// import styled from "styled-components";
+import styled from "styled-components";
 
-// export const Caixa = styled.div`
-//   transition: 2s;
-//   background-color: red;
-//   width: 100px;
-//   height: 100px;
+export const Titulo = styled.h1`
+  font-family: "Poppins", sans-serif;
+`;
 
-//   ${({ cor }) =>
-//     cor &&
-//     `
-//       background-color: yellow;
+export const Carregando = styled.div`
+  background-color: greenyellow;
+  width: 40vw;
+  transition: 5s;
 
-//   `}
-// `;
+  ${({ ativo }) =>
+    ativo &&
+    `
+        width: 100vw;
+        background-color: yellow;
+    `}
+`;

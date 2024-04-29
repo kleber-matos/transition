@@ -5,10 +5,15 @@ import styled from "styled-components";
 import * as S from "./styled";
 
 export default function App() {
+  const [ativo, setAtivo] = useState(false);
+
   return (
     <>
-      <h1>trasition</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At fugit,</p>
+      <S.Titulo>trasition</S.Titulo>
+
+      <S.Carregando ativo={ativo}>carregando</S.Carregando>
+
+      <button onClick={() => setAtivo(!ativo)}>start</button>
     </>
   );
 }
